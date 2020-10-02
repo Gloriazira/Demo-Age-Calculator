@@ -13,9 +13,9 @@
 
 <body>
     <h2 class="header">Age Calculator</h2>
-    <form action="" class="form">
+    <form action="" class="form" id="myForm">
        <input type="text" placeholder=" Enter Your Name" class="block" id="name">
-       <input type="text" placeholder="Enter Your Age" class="block" id="date">
+       <input type="number" placeholder="Enter Your Age" class="block" id="date">
       
        Result:
        <br/>
@@ -29,7 +29,7 @@
        <br/>
        <div id="message"></div>
         <input class="btn" type="button" value="Calculate Age" onclick="ageCalculate();">
-        <input type="reset" class="btn">
+        <input type="reset" class="btn" onclick="resetForm()">
         <br/><br/>
     </form>
     <p id="demo"></p>
